@@ -9,7 +9,7 @@
 ## 1. Основний asset
 
 ```text
-assets/flower_runtime_reference.png
+flower_runtime_reference.png
 ```
 
 Це зображення можна використовувати в README або в документації як visual seed.
