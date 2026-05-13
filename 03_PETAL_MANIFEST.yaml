@@ -1,0 +1,125 @@
+# 03_PETAL_MANIFEST.yaml
+# Machine-readable petal manifest for Vuzol-19 scene runtime v0.1
+
+center_bindu:
+  color: white
+  role: "center / Human Gate / verdict / meaning preservation"
+  files:
+    - "00_MASTER_CANON.md"
+    - "01_FLOWER_FIELD_MAP.md"
+    - "02_FLOWER_RUNTIME_ROUTER.md"
+    - "03_PETAL_MANIFEST.yaml"
+  asks:
+    - "What is the human center of this scene?"
+    - "Has the scene kept Human Gate?"
+    - "Is the Flower used as system, not decoration?"
+  verdicts:
+    - KEEP
+    - REWRITE
+    - BLOCK
+    - HOLD
+    - REROUTE
+
+violet_mage:
+  color: violet
+  role: "possibility / image / future transition"
+  files:
+    - "ERA_OF_INTENT.md"
+    - "CHAPTER_SPINE.md"
+    - "SHADOW_MAP.md"
+  asks:
+    - "What future possibility opens here?"
+    - "What is the hidden image or temptation?"
+    - "What transition is forming but not yet allowed?"
+  blocks_if:
+    - "symbol becomes dogma"
+    - "future vision bypasses Guard"
+    - "unknown is filled too early"
+
+orange_archer:
+  color: orange
+  role: "movement / vector / scene direction"
+  files:
+    - "SCENE_PROTOCOL.md"
+    - "LIFE_SCENE_GENERATOR.md"
+    - "DRIFT_SYSTEM.md"
+    - "EPISODE_RUNTIME.md"
+  asks:
+    - "Where does the scene move?"
+    - "What action wants to happen?"
+    - "What vector pulls the character?"
+  blocks_if:
+    - "movement has no return path"
+    - "scene is static explanation"
+    - "action replaces insight"
+
+yellow_engineer:
+  color: yellow
+  role: "structure / world mechanics / technology"
+  files:
+    - "WORLD_TECH_BIBLE.md"
+    - "BUGA_SPHERES.md"
+    - "EXOSKELETON_AND_VR.md"
+    - "PYRAMID_GRID.md"
+    - "CANONICAL_SYMBOL_SCHEMA.md"
+  asks:
+    - "What technology or structure makes this scene possible?"
+    - "How does the mechanism work physically or socially?"
+    - "What system reads the state?"
+  blocks_if:
+    - "technology is magic without mechanism"
+    - "world detail has no consequence"
+    - "symbol replaces engineering"
+
+blue_guardian:
+  color: blue
+  role: "law / boundary / Human Gate / Guard"
+  files:
+    - "HUMAN_GATE_PROTOCOL.md"
+    - "FALSE_GREEN_DETECTOR.md"
+    - "PRION_AUDIT.md"
+    - "UNKNOWN_PROTOCOL.md"
+  asks:
+    - "Who has the right to act?"
+    - "Is there Human Gate?"
+    - "Is this false-green?"
+    - "Is Unknown preserved?"
+  blocks_if:
+    - "AI replaces human choice"
+    - "action happens without consent or return path"
+    - "scene resolves too beautifully"
+
+green_healer:
+  color: green
+  role: "balance / contact / return_to_zero / memory healing"
+  files:
+    - "MEMORY_REPLAY_LEDGER.md"
+    - "DIALOGUE_RHYTHM.md"
+    - "LIFE_COMPUTE_LADDER.md"
+    - "RETURN_TO_ZERO.md"
+  asks:
+    - "What is restored?"
+    - "Is there contact, not just comfort?"
+    - "Can the person return to zero?"
+    - "What memory is updated?"
+  blocks_if:
+    - "comfort replaces healing"
+    - "pain is suppressed instead of integrated"
+    - "return_to_zero is missing"
+
+red_tank:
+  color: red
+  role: "pressure / body / pain / survival / impact cost"
+  files:
+    - "ACTION_BLOCK_RULES.md"
+    - "PAIN_PROTOCOL.md"
+    - "HELL_CRYSTAL.md"
+    - "DRIFT_PILOT_CLASSES.md"
+  asks:
+    - "Where is the real pressure?"
+    - "Who pays with body, pain, risk or consequence?"
+    - "What breaks if this action passes?"
+  blocks_if:
+    - "pain is romanticized"
+    - "risk is aesthetic only"
+    - "body consequence is ignored"
