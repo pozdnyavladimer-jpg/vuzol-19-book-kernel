@@ -7,6 +7,19 @@
 
 ---
 
+## Bridge to Mayan Memory Clock
+
+Planetary Resource Clock explains what resource is active.
+
+Mayan Memory Clock explains when a resource enters a replay phase.
+
+Planet = resource.
+Orbit = rhythm.
+Mayan Calendar = memory cycle.
+Flower = audit.
+Human Gate = permission.
+
+
 ## 1. Головна формула
 
 ```text
