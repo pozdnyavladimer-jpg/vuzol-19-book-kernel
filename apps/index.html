@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vuzol-19 — Sri Flower DNA Cube Simulation</title>
+  <style>
+    :root {
+      --bg:#07090f; --panel:#111827; --text:#e5e7eb; --muted:#9ca3af;
+      --red:#ff4b4b; --orange:#ff9a36; --yellow:#ffe45e;
+      --blue:#4cc9ff; --green:#59e36f; --violet:#b980ff; --gold:#f6c65b;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(circle at 50% 20%,#182033,var(--bg) 70%);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+    header,.wrap{max-width:1100px;margin:auto;padding:22px 20px 8px}
+    h1{margin:0 0 8px;font-size:clamp(28px,4vw,48px);line-height:1.05}
+    .subtitle,.note{color:var(--muted);line-height:1.5}
+    .wrap{padding-top:10px;padding-bottom:32px;display:grid;gap:16px}
+    .canvas-card{border:1px solid rgba(255,255,255,.12);border-radius:20px;background:rgba(6,10,20,.72);box-shadow:0 20px 60px rgba(0,0,0,.35);overflow:hidden}
+    canvas{width:100%;height:min(76vh,780px);min-height:520px;display:block}
+    .legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+    .item{background:rgba(17,24,39,.78);border:1px solid rgba(255,255,255,.10);border-radius:14px;padding:12px 14px;min-height:74px}
+    .item b{display:block;margin-bottom:4px}.item span{color:var(--muted);font-size:13px;line-height:1.35}
+    .dot{display:inline-block;width:12px;height:12px;border-radius:999px;margin-right:8px;vertical-align:-1px}
+    .controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;background:rgba(17,24,39,.78);border:1px solid rgba(255,255,255,.10);border-radius:14px;padding:12px 14px}
+    button,label{color:var(--text);background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:9px 12px;font:inherit}
+    button{cursor:pointer} input[type=range]{width:160px} code{color:#fde68a}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sri → Flower → DNA → Cube</h1>
+    <div class="subtitle">
+      Vuzol-19 runtime visualization: Sri triangle gate is rotated by Flower movement
+      (<b>+3 formation</b> and <b>-3 validation</b>). Repeated passes create rings/orbits;
+      DNA is memory moving through gates; cube tests whether motion can become stable 3D form.
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="canvas-card"><canvas id="sim"></canvas></section>
+    <section class="controls">
+      <button id="toggle">Pause</button>
+      <button id="reset">Reset</button>
+      <label>Speed <input id="speed" type="range" min="0.2" max="3" step="0.1" value="1"></label>
+      <label>Shadow <input id="shadow" type="range" min="0" max="1" step="0.01" value="0.22"></label>
+      <span class="note">Higher shadow bends the route away from Bindu; low shadow lets the orbit close.</span>
+    </section>
+    <section class="legend">
+      <div class="item"><b><span class="dot" style="background:var(--red)"></span>RED</b><span>Pressure / potential entering the gate.</span></div>
+      <div class="item"><b><span class="dot" style="background:var(--orange)"></span>ORANGE</b><span>Flow / motion / expression begins.</span></div>
+      <div class="item"><b><span class="dot" style="background:var(--yellow)"></span>YELLOW</b><span>Structure / triangle / formation.</span></div>
+      <div class="item"><b><span class="dot" style="background:var(--blue)"></span>BLUE</b><span>Law / Guard / validation.</span></div>
+      <div class="item"><b><span class="dot" style="background:var(--green)"></span>GREEN</b><span>Coherence / stable orbit.</span></div>
+      <div class="item"><b><span class="dot" style="background:var(--violet)"></span>VIOLET</b><span>Memory / phase ledger / next octave.</span></div>
+    </section>
+    <p class="note"><code>triangle repeated through time → circle; circle repeated through scale → spiral; spiral repeated through memory → helix; helix tested by cube → 3D action.</code></p>
+  </main>
+
+<script>
+(() => {
+  const canvas = document.getElementById("sim"), ctx = canvas.getContext("2d");
+  const toggleBtn = document.getElementById("toggle"), resetBtn = document.getElementById("reset");
+  const speedEl = document.getElementById("speed"), shadowEl = document.getElementById("shadow");
+  let running = true, t = 0, dpr = window.devicePixelRatio || 1;
+  const C = {red:"#ff4b4b", orange:"#ff9a36", yellow:"#ffe45e", blue:"#4cc9ff", green:"#59e36f", violet:"#b980ff", gold:"#f6c65b", white:"#eef2ff"};
+
+  function resize(){dpr=window.devicePixelRatio||1; const r=canvas.getBoundingClientRect(); canvas.width=Math.floor(r.width*dpr); canvas.height=Math.floor(r.height*dpr); ctx.setTransform(dpr,0,0,dpr,0,0)}
+  window.addEventListener("resize", resize); resize();
+  toggleBtn.onclick=()=>{running=!running; toggleBtn.textContent=running?"Pause":"Play"}; resetBtn.onclick=()=>{t=0};
+
+  function line(a,b,s="rgba(255,255,255,.22)",w=1){ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.strokeStyle=s;ctx.lineWidth=w;ctx.stroke()}
+  function circle(p,r,s="rgba(255,255,255,.2)",f=null,w=1){ctx.beginPath();ctx.arc(p.x,p.y,r,0,Math.PI*2); if(f){ctx.fillStyle=f;ctx.fill()} ctx.strokeStyle=s;ctx.lineWidth=w;ctx.stroke()}
+  function poly(ps,s="rgba(255,255,255,.2)",w=1,close=true){ctx.beginPath();ps.forEach((p,i)=>i?ctx.lineTo(p.x,p.y):ctx.moveTo(p.x,p.y)); if(close)ctx.closePath(); ctx.strokeStyle=s;ctx.lineWidth=w;ctx.stroke()}
+  function text(txt,x,y,size=13,color="rgba(255,255,255,.72)",align="center"){ctx.font=`${size}px system-ui,sans-serif`;ctx.fillStyle=color;ctx.textAlign=align;ctx.fillText(txt,x,y)}
+  function rp(cx,cy,r,a){return{x:cx+Math.cos(a)*r,y:cy+Math.sin(a)*r}}
+
+  function drawSri(cx,cy,R,phase){
+    ctx.save(); ctx.translate(cx,cy); ctx.rotate(phase*.12); ctx.translate(-cx,-cy);
+    const s=R*1.88; ctx.strokeStyle="rgba(246,198,91,.34)"; ctx.lineWidth=2; ctx.strokeRect(cx-s/2,cy-s/2,s,s);
+    for(let i=0;i<9;i++){const up=i%2===0, rr=R*(.42+i*.055), yOff=(i-4)*R*.035, a0=-Math.PI/2+(up?0:Math.PI)+phase*.04*(i%3-1); const pts=[0,1,2].map(k=>rp(cx,cy+yOff,rr,a0+k*2*Math.PI/3)); poly(pts,up?"rgba(246,198,91,.42)":"rgba(76,201,255,.32)",1.2)}
+    circle({x:cx,y:cy},R*.63,"rgba(255,255,255,.22)",null,1.2); circle({x:cx,y:cy},4.5,C.white,"rgba(255,255,255,.9)",1); text("BINDU",cx,cy+R*.78,12,"rgba(255,255,255,.55)");
+    ctx.restore();
+  }
+
+  function drawCube(cx,cy,R,phase){
+    const size=R*1.72, depth=R*.38, dx=Math.cos(phase*.35)*depth, dy=Math.sin(phase*.35)*depth*.45-depth*.2;
+    const a=[{x:cx-size/2,y:cy-size/2},{x:cx+size/2,y:cy-size/2},{x:cx+size/2,y:cy+size/2},{x:cx-size/2,y:cy+size/2}], b=a.map(p=>({x:p.x+dx,y:p.y+dy}));
+    poly(a,"rgba(255,255,255,.18)",1.1); poly(b,"rgba(255,255,255,.12)",1.1); for(let i=0;i<4;i++)line(a[i],b[i],"rgba(255,255,255,.13)",1);
+    text("CUBE = 3D BODY TEST",cx,cy+size/2+28,12,"rgba(255,255,255,.45)");
+  }
+
+  function drawFlowerPath(cx,cy,R,phase,shadow){
+    const petals=[["RED",C.red,-Math.PI/2],["ORANGE",C.orange,-Math.PI/6],["YELLOW",C.yellow,Math.PI/6],["GREEN",C.green,Math.PI/2],["BLUE",C.blue,Math.PI*5/6],["VIOLET",C.violet,Math.PI*7/6]];
+    for(let k=1;k<=5;k++){circle({x:cx,y:cy},R*(.22+k*.17)+Math.sin(phase*.8+k)*2,`rgba(246,198,91,${.05+k*.022})`,null,1)}
+    ctx.beginPath(); let first=true;
+    for(let i=0;i<330;i++){const a=i*.22+phase, rr=R*.025*Math.sqrt(i)*(1+shadow*.35*Math.sin(i*.11+phase*1.7)), bend=shadow*R*.12*Math.sin(a*2.6), p={x:cx+Math.cos(a)*rr+Math.cos(a+Math.PI/2)*bend,y:cy+Math.sin(a)*rr+Math.sin(a+Math.PI/2)*bend}; if(first){ctx.moveTo(p.x,p.y);first=false}else ctx.lineTo(p.x,p.y)}
+    ctx.strokeStyle="rgba(255,255,255,.23)"; ctx.lineWidth=1.4; ctx.stroke();
+    petals.forEach(([name,color,a],idx)=>{const p=rp(cx,cy,R*(.88+.04*Math.sin(phase+idx)),a+phase*.07); line({x:cx,y:cy},p,color+"55",1.3); circle(p,8,color,color,1.4); text(name,p.x,p.y-14,11,color)});
+    const forward=[[-Math.PI/2,C.red,"+3 RED"],[-Math.PI/6,C.orange,"+3 ORANGE"],[Math.PI/6,C.yellow,"+3 YELLOW"]];
+    const back=[[Math.PI*5/6,C.blue,"-3 BLUE"],[Math.PI/2,C.green,"-3 GREEN"],[Math.PI*7/6,C.violet,"-3 VIOLET"]];
+    const seq=Math.floor((phase*1.2)%6), active=seq<3?forward[seq]:back[seq-3], ap=rp(cx,cy,R*(.55+.04*Math.sin(phase*2)),active[0]+phase*.22);
+    circle(ap,13,active[1],active[1]+"66",2); text(active[2],ap.x,ap.y+28,12,active[1]);
+  }
+
+  function drawDNA(cx,cy,R,phase,shadow){
+    const h=R*1.35, turns=3.2, amp=R*.18*(1+shadow*.15), steps=110, left=[], right=[];
+    for(let i=0;i<steps;i++){const u=i/(steps-1), y=cy-h/2+u*h, a=u*turns*Math.PI*2+phase*1.5; left.push({x:cx+Math.sin(a)*amp,y}); right.push({x:cx+Math.sin(a+Math.PI)*amp,y}); if(i%9===0)line(left[i],right[i],"rgba(255,255,255,.18)",1)}
+    poly(left,"rgba(89,227,111,.50)",2,false); poly(right,"rgba(185,128,255,.50)",2,false);
+    text("DNA = memory sequence through gates",cx,cy-h/2-18,12,"rgba(255,255,255,.48)");
+  }
+
+  function render(){
+    const w=canvas.clientWidth,h=canvas.clientHeight,cx=w/2,cy=h/2+8,R=Math.min(w,h)*.26,phase=t,shadow=parseFloat(shadowEl.value);
+    ctx.clearRect(0,0,w,h);
+    for(let i=0;i<70;i++){circle({x:(i*97+phase*17)%w,y:(i*53+phase*11)%h},1.1,"rgba(255,255,255,.10)","rgba(255,255,255,.10)",1)}
+    drawCube(cx,cy,R,phase); drawSri(cx,cy,R,phase); drawFlowerPath(cx,cy,R,phase,shadow); drawDNA(cx,cy,R,phase,shadow);
+    text("4D POSSIBILITY",28,32,13,"rgba(255,255,255,.60)","left");
+    ["→ Fibonacci scale route","→ Sri +3/-3 gates","→ Flower audit","→ Cube body test","→ Bindu verdict"].forEach((s,i)=>text(s,28,54+i*20,12,"rgba(255,255,255,.42)","left"));
+    const verdict=shadow<.18?"OCTAVE_SHIFT candidate":shadow<.42?"HOLD / phase not clean":"BLOCK / shadow bends route", vc=shadow<.18?C.green:shadow<.42?C.yellow:C.red;
+    text("BINDU VERDICT: "+verdict,w-28,32,13,vc,"right"); text("shadow = "+shadow.toFixed(2),w-28,54,12,"rgba(255,255,255,.45)","right");
+    if(running)t+=.010*parseFloat(speedEl.value); requestAnimationFrame(render);
+  }
+  render();
+})();
+</script>
+</body>
+</html>
