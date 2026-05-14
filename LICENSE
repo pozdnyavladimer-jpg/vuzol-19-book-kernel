@@ -1,0 +1,156 @@
+# Vuzol-19 Book Kernel License
+
+Copyright (c) 2026 Володимир Поздняк / Volodymyr Pozdniak
+
+Vuzol-19 is intended as an open cultural and technical kernel.
+
+The author does not claim ownership over the future, human intent, the Flower as a universal metaphor, or anyone’s personal path.
+
+This repository defines the Vuzol-19 Book Kernel canon, runtime structure, templates, examples, prompts, world-theory files, scenes and app/runtime materials.
+
+Because the repository contains both code-like materials and creative/canonical text, it uses a dual-license model.
+
+---
+
+## 1. Code License — MIT
+
+The following parts of this repository are licensed under the MIT License:
+
+- `apps/`
+- scripts
+- executable code
+- software implementations
+- web/app prototypes
+- API or tool code
+- configuration files intended to run software
+
+### MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files covered by the MIT License
+(the “Software”), to deal in the Software without restriction, including without
+limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom
+the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## 2. Text / Canon / World License — Creative Commons BY-NC-SA 4.0
+
+Unless otherwise noted, the following parts of this repository are licensed under:
+
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International  
+SPDX-License-Identifier: CC-BY-NC-SA-4.0
+
+This applies to:
+
+- novel chapters and scenes
+- canon files
+- world-theory files
+- scene seeds
+- examples
+- templates
+- prompts
+- README and documentation text
+- Flower runtime descriptions
+- Human Gate / Shadow / Bindu / Vuzol-19 narrative concepts as expressed in this repository
+- fictional technologies and worldbuilding text
+- diagrams or images created specifically for this repository, unless another license is stated near the file
+
+You may:
+
+- copy and share the material
+- adapt, remix and transform the material
+- translate the material
+- use it for non-commercial learning, research, writing, testing and creative work
+
+Under these conditions:
+
+- give appropriate credit to the original repository and author
+- indicate if changes were made
+- do not use the text/canon/world material for commercial purposes without separate permission
+- share adapted versions under the same or a compatible license
+- do not imply endorsement by the original author unless permission is given
+
+For the full legal code, see the Creative Commons BY-NC-SA 4.0 license:
+https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
+---
+
+## 3. Contributions
+
+By contributing to this repository, you agree that your contribution may be distributed under the same license structure:
+
+- code contributions under MIT License
+- text, canon, worldbuilding, templates, prompts, examples and scene contributions under CC BY-NC-SA 4.0, unless otherwise agreed in writing
+
+If you submit a contribution, make sure you have the right to submit it.
+
+Do not submit copyrighted material that you do not own or do not have permission to license.
+
+---
+
+## 4. Human Gate and World-Theory Boundary
+
+This section is project guidance, not an additional legal restriction.
+
+Vuzol-19 is built around the Human Gate principle:
+
+AI, Flower Scan, world theory, pyramid field, crown interface, capsule, box, calendar, cosmic model or any other system must not replace human permission.
+
+Contributors should preserve:
+
+- Human Gate
+- FACT / MODEL / FICTION / HOLD boundaries
+- AI as Guard, not God
+- the right of a person or character to say yes, no or HOLD
+- clear separation between factual claims, models and fictional mechanisms
+
+Do not present MODEL or FICTION as proven FACT.
+
+Do not use Vuzol-19 materials to coerce, diagnose, shame or control real people.
+
+---
+
+## 5. Trademarks / Project Identity
+
+The names “Vuzol-19”, “Vuzol-19 Book Kernel”, “Flower Scan”, “Human Gate”, “Bindu Verdict” and related project identity terms are part of the project’s identity.
+
+You may use them to describe forks, adaptations, commentary, research and compatible non-commercial derivatives with attribution.
+
+Do not imply that your project is the official Vuzol-19 Book Kernel or endorsed by the original author unless you have permission.
+
+---
+
+## 6. Commercial Use
+
+Commercial use of MIT-licensed code is allowed under the MIT License.
+
+Commercial use of CC BY-NC-SA licensed text, canon, worldbuilding, templates, prompts, examples, scenes, diagrams and narrative materials requires separate permission from the copyright holder.
+
+For commercial licensing, contact the repository maintainer.
+
+---
+
+## 7. Short version
+
+Code can be used freely under MIT.
+
+Text, canon, prompts, scenes, examples and worldbuilding can be shared and adapted non-commercially with attribution and share-alike under CC BY-NC-SA 4.0.
+
+Do not remove Human Gate.
+
+Do not present fiction as fact.
+
+If uncertain, choose HOLD.
