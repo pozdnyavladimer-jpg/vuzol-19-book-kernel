@@ -372,7 +372,7 @@ Suggested lines:
 Add to root `README.md` in the world-theory / canon section:
 
 ```markdown
-- `world_theory/13_BRACELET_SHADOW_GATE_SCENE.md` — bracelet as physical Shadow Gate on the hand; shows HOLD before inner diffusion becomes action.
+- `scene_seeds/13_BRACELET_SHADOW_GATE_SCENE.md` — bracelet as physical Shadow Gate on the hand; shows HOLD before inner diffusion becomes action.
 - `world_theory/39_BLACK_HOLE_DARK_MEMORY_MECHANISM.md` — black hole as inverted Flower: exhausted form loses outward current and returns as dark evolutionary memory.
 - `world_theory/40_TRANSITION_GRAVITY_MEMORY.md` — practical AI memory model where past transitions create attraction, repulsion and future bias.
 - `world_theory/41_COSMIC_FLOWER_CLOSURE_CHAIN.md` — full closure chain from hand / bracelet to galaxy / black hole / AI memory.
