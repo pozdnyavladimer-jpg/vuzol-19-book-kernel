@@ -91,7 +91,7 @@ exhausted form
 File:
 
 ```text
-world_theory/13_BRACELET_SHADOW_GATE_SCENE.md
+scene_seeds/13_BRACELET_SHADOW_GATE_SCENE.md
 ```
 
 Role:
