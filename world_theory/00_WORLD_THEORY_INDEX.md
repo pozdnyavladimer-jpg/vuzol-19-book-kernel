@@ -121,6 +121,25 @@ WORLD_THEORY_MAP:
   boundaries:
     file: "11_FACT_MODEL_FICTION_BOUNDARIES.md"
     role: "trust guard for all theories"
+octave_transition_validation:
+    file: "33_OCTAVE_TRANSITION_VALIDATION_LAW.md"
+    role: "general law: no octave jump without validation"
+
+  electron_3_plus_3_sri_cube:
+    file: "35_ELECTRON_3_PLUS_3_SRI_CUBE_OCTAVE_GATE.md"
+    role: "Bindu-electron model through 3+3, Sri Cube, Flower rotation and test gate"
+
+  human_diffusion_gate:
+    file: "36_HUMAN_DIFFUSION_GATE.md"
+    role: "human as stabilized diffusion with inner multiverse, shadow map and Human Gate"
+
+  shadow_boundary_code:
+    file: "37_SHADOW_AS_BOUNDARY_CODE.md"
+    role: "shadow as hidden boundary-code of human change and PRION risk"
+
+  ai_diffusion_mirror:
+    file: "38_AI_AS_DIFFUSION_MIRROR.md"
+    role: "AI as mirror, simulator and visibility amplifier for hidden diffusions before action"
 ```
 
 ---
