@@ -76,11 +76,11 @@ SCENE_SEEDS:
 2. Copy it into a new chapter draft.
 3. Fill `templates/PRE_SCENE_RUNTIME_TEMPLATE.md`.
 4. Run Flower Scan.
-5. 5. Check Rune State, Sri Cube and Octave Gate if the seed crosses levels.
-6. Only draft after Bindu Verdict.
-7. Audit with `templates/POST_SCENE_AUDIT_TEMPLATE.md`.
-6. Only draft after Bindu Verdict.
-7. Audit with `templates/POST_SCENE_AUDIT_TEMPLATE.md`.
+5. Check Rune State, Sri Cube and Octave Gate if the seed crosses levels.
+6. Produce Bindu Verdict.
+7. Draft only after Bindu Verdict.
+8. Audit with `templates/POST_SCENE_AUDIT_TEMPLATE.md`.
+9. Update Memory Ledger.
 
 ---
 
