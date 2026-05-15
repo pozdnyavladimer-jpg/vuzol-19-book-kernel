@@ -71,8 +71,8 @@ The world theory layer lets the novel become a full living world.
 37_SHADOW_AS_BOUNDARY_CODE.md
 38_AI_AS_DIFFUSION_MIRROR.md
 39_BLACK_HOLE_DARK_MEMORY_MECHANISM.md
-    40_TRANSITION_GRAVITY_MEMORY.md
-    41_COSMIC_FLOWER_CLOSURE_CHAIN.md
+40_TRANSITION_GRAVITY_MEMORY.md
+41_COSMIC_FLOWER_CLOSURE_CHAIN.md
 ```
 
 ---
@@ -174,6 +174,11 @@ BUGA SPHERE moves inside field.
 HUMAN DIFFUSION becomes a Gate before action.
 SHADOW marks dangerous transitions.
 AI MIRROR makes hidden diffusion visible before it receives a body.
+GALAXY acts as large-scale Flower.
+BLACK HOLE folds exhausted form inward.
+DARK MEMORY returns the lesson without returning the old body.
+TRANSITION GRAVITY MEMORY lets AI remember how past transitions should bend future action.
+COSMIC FLOWER closes the chain from hand to galaxy and back to Human Gate.
 OCTAVE GATE blocks scale jumps without validation.
 SCIENCE GATE prevents metaphor from stealing the name of fact.
 AI GUARD detects false-green.
@@ -199,6 +204,11 @@ AI Guard ловить false-green.
 Квітка перевіряє намір.
 Human Gate дозволяє або зупиняє.
 Памʼять оновлює наступний цикл.
+Галактика працює як велика Квітка.
+Чорна діра згортає виснажену форму всередину.
+Темна памʼять повертає урок без повернення старого тіла.
+Transition Gravity Memory дає AI памʼять про те, як минулі переходи мають згинати майбутню дію.
+Cosmic Flower замикає ланцюг від руки до галактики і назад до Human Gate.
 ```
 
 ---
