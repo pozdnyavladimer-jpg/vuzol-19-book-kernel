@@ -408,6 +408,79 @@ It remembers the shadow of the failure as field geometry.
 
 ---
 
+## 10A. How black holes affect 4D creation
+
+In Vuzol-19, a black hole does not create 4D possibility directly.
+
+It affects future 4D creation by compressing old exhausted 3D forms into dark memory.
+
+```text
+old 3D action / exhausted form
+→ collapse
+→ Bindu compression
+→ unsafe current removed
+→ green information preserved
+→ dark memory
+→ transition gravity
+→ future 4D possibility field bends
+→ new diffusion receives boundary memory
+```
+
+This means:
+
+```text
+black hole = not creator of form
+black hole = compressor of failed / exhausted form
+dark memory = memory without visible body
+transition gravity = how old lessons bend new possibility
+4D creation = future field of possible forms shaped by compressed memory
+```
+
+The black hole does not say:
+
+```text
+repeat the old form
+```
+
+It says:
+
+```text
+do not repeat the old unsafe current
+carry only the lesson
+```
+
+Therefore black holes influence 4D creation not by returning matter as the same body, but by changing the boundary conditions of future possibilities.
+
+Canon sentence:
+
+> **A black hole does not create the next form.  
+> It removes the unsafe current from the old form, so the next 4D field does not begin from the same mistake.**
+
+FACT / MODEL / FICTION / HOLD:
+
+```yaml
+FACT:
+  - "Black holes exist."
+  - "Black holes are associated with strong gravitational effects."
+  - "Dark matter is inferred through gravitational effects, not direct visible light."
+
+MODEL:
+  - "Vuzol-19 models black holes as inverted Flower / Bindu-compressors."
+  - "Dark memory models how collapsed transitions influence future possible paths."
+
+FICTION:
+  - "In the novel, black holes process exhausted forms into dark evolutionary memory."
+  - "Future 4D creation is shaped by this dark memory field."
+
+HOLD:
+  - "Do not claim this is proven physical dark matter theory."
+  - "Do not claim black holes are physically proven to generate 4D creation."
+  - "Treat this as world-theory / fiction / computational metaphor unless testable physics is defined."
+```
+
+---
+
+
 ## 11. Relation to computer memory
 
 This mechanism can be translated into AI memory.
