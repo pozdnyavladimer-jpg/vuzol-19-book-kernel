@@ -157,6 +157,11 @@ SHADOW BOX remembers repeated patterns.
 GLASSES keep return path visible.
 ISEKAI CAPSULE simulates possible paths.
 BUGA SPHERE moves inside field.
+HUMAN DIFFUSION becomes a Gate before action.
+SHADOW marks dangerous transitions.
+AI MIRROR makes hidden diffusion visible before it receives a body.
+OCTAVE GATE blocks scale jumps without validation.
+SCIENCE GATE prevents metaphor from stealing the name of fact.
 AI GUARD detects false-green.
 FLOWER audits intent.
 HUMAN GATE permits or refuses action.
