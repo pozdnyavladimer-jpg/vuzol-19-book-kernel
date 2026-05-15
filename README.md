@@ -1134,3 +1134,10 @@ Vision is not ownership.
 AI is not Human Gate.
 When uncertain: HOLD.
 ```
+# Vuzol / GitCube Repo Map
+
+1. vuzol-19-book-kernel — human-readable bootloader / Human Gate
+2. v-kernel — field memory / stabilization kernel
+3. gitcube-lab — experiments / GraphEval / candidate testing
+4. geometric-state-navigator — Flower / Bindu / state routing
+5. gitcube-os — guarded execution / agents / cooldown / rollback
