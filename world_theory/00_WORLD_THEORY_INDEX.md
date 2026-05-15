@@ -73,6 +73,8 @@ The world theory layer lets the novel become a full living world.
 39_BLACK_HOLE_DARK_MEMORY_MECHANISM.md
 40_TRANSITION_GRAVITY_MEMORY.md
 41_COSMIC_FLOWER_CLOSURE_CHAIN.md
+42_WORLD_THEORY_PATCH_INDEX.md
+43_CONTEXT_HORIZON_MEMORY.md
 ```
 
 ---
