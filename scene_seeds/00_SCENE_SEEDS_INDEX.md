@@ -55,6 +55,17 @@ SCENE_SEEDS:
   08_empty_node_ocean_pyramid:
     file: "08_empty_node_ocean_pyramid.md"
     core: "The missing pyramid node is not stone but an ocean void."
+11_inner_party_operator:
+    file: "11_INNER_PARTY_OPERATOR_SCENE_AND_AI_GUIDE.md"
+    core: "The operator is not one class but an inner party system that must protect Human Gate."
+
+  12_standing_wave_division_operator:
+    file: "12_STANDING_WAVE_DIVISION_OPERATOR_SCENE_AND_AI_GUIDE.md"
+    core: "The operator sees standing-wave evolution and learns that division protects Bindu from merge."
+
+  13_bracelet_shadow_gate:
+    file: "13_BRACELET_SHADOW_GATE_SCENE.md"
+    core: "The bracelet stops the hand before action and reveals shadow as boundary-code, not evil."
 ```
 
 ---
@@ -65,8 +76,11 @@ SCENE_SEEDS:
 2. Copy it into a new chapter draft.
 3. Fill `templates/PRE_SCENE_RUNTIME_TEMPLATE.md`.
 4. Run Flower Scan.
-5. Only draft after Bindu Verdict.
-6. Audit with `templates/POST_SCENE_AUDIT_TEMPLATE.md`.
+5. 5. Check Rune State, Sri Cube and Octave Gate if the seed crosses levels.
+6. Only draft after Bindu Verdict.
+7. Audit with `templates/POST_SCENE_AUDIT_TEMPLATE.md`.
+6. Only draft after Bindu Verdict.
+7. Audit with `templates/POST_SCENE_AUDIT_TEMPLATE.md`.
 
 ---
 
