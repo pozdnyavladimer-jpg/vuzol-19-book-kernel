@@ -70,6 +70,9 @@ The world theory layer lets the novel become a full living world.
 36_HUMAN_DIFFUSION_GATE.md
 37_SHADOW_AS_BOUNDARY_CODE.md
 38_AI_AS_DIFFUSION_MIRROR.md
+39_BLACK_HOLE_DARK_MEMORY_MECHANISM.md
+    40_TRANSITION_GRAVITY_MEMORY.md
+    41_COSMIC_FLOWER_CLOSURE_CHAIN.md
 ```
 
 ---
@@ -140,6 +143,17 @@ octave_transition_validation:
   ai_diffusion_mirror:
     file: "38_AI_AS_DIFFUSION_MIRROR.md"
     role: "AI as mirror, simulator and visibility amplifier for hidden diffusions before action"
+black_hole_dark_memory:
+        file: "39_BLACK_HOLE_DARK_MEMORY_MECHANISM.md"
+        role: "black hole / dark memory model as cosmic HOLD and information boundary"
+
+      transition_gravity_memory:
+        file: "40_TRANSITION_GRAVITY_MEMORY.md"
+        role: "gravity, transition and memory as large-scale collapse logic"
+
+      cosmic_flower_closure_chain:
+        file: "41_COSMIC_FLOWER_CLOSURE_CHAIN.md"
+        role: "cosmic closure chain connecting Flower, black hole memory and Gate logic"
 ```
 
 ---
