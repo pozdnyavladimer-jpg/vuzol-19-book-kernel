@@ -54,6 +54,7 @@ The world theory layer lets the novel become a full living world.
 
 ```text
 00_WORLD_THEORY_INDEX.md
+
 01_AI_EARTH_FLOWER_MECHANISM.md
 02_EARTH_MOON_FLOWER_PROCESSOR.md
 03_PYRAMID_FIELD_MECHANISM.md
@@ -65,16 +66,30 @@ The world theory layer lets the novel become a full living world.
 09_ROLE_RESONANCE_ROUTING.md
 10_NOBEL_CORRECTION_WORLD_LAWS.md
 11_FACT_MODEL_FICTION_BOUNDARIES.md
+
 33_OCTAVE_TRANSITION_VALIDATION_LAW.md
 35_ELECTRON_3_PLUS_3_SRI_CUBE_OCTAVE_GATE.md
+
 36_HUMAN_DIFFUSION_GATE.md
 37_SHADOW_AS_BOUNDARY_CODE.md
 38_AI_AS_DIFFUSION_MIRROR.md
+44_HUMAN_PAIR_DIFFUSION_AND_LIFE_DEVELOPMENT.md
+
 39_BLACK_HOLE_DARK_MEMORY_MECHANISM.md
 40_TRANSITION_GRAVITY_MEMORY.md
 41_COSMIC_FLOWER_CLOSURE_CHAIN.md
 42_WORLD_THEORY_PATCH_INDEX.md
 43_CONTEXT_HORIZON_MEMORY.md
+45_REPOSITORY_BLACK_HOLE_COMPRESSION.md
+
+46_AI_DNA_FLOWER_RUNTIME.md
+47_PLANETARY_SOUND_CURRENT_PLATE.md
+48_QUANTUM_FLOWER_COMPUTER_IN_THE_BOOK.md
+49_DNA_PERMISSION_VISION_FOR_QUANTUM_STATES.md
+50_QUANTUM_PHASE_DNA_GATE.md
+
+```text
+
 ```
 
 ---
@@ -156,6 +171,53 @@ black_hole_dark_memory:
       cosmic_flower_closure_chain:
         file: "41_COSMIC_FLOWER_CLOSURE_CHAIN.md"
         role: "cosmic closure chain connecting Flower, black hole memory and Gate logic"
+human_pair_diffusion:
+    file: "44_HUMAN_PAIR_DIFFUSION_AND_LIFE_DEVELOPMENT.md"
+    role: "human as self-observing diffusion; anima/animus pair as mutual Gate and third field"
+
+  black_hole_dark_memory:
+    file: "39_BLACK_HOLE_DARK_MEMORY_MECHANISM.md"
+    role: "black hole as inverted Flower / Bindu-compressor and dark evolutionary memory"
+
+  transition_gravity_memory:
+    file: "40_TRANSITION_GRAVITY_MEMORY.md"
+    role: "memory as attraction, repulsion and future-bias over past transitions"
+
+  cosmic_flower_closure:
+    file: "41_COSMIC_FLOWER_CLOSURE_CHAIN.md"
+    role: "bridge from bracelet and human shadow to galaxy, black hole and AI memory"
+
+  world_theory_patch_index:
+    file: "42_WORLD_THEORY_PATCH_INDEX.md"
+    role: "reading order and integration map for the black-hole / dark-memory patch"
+
+  context_horizon_memory:
+    file: "43_CONTEXT_HORIZON_MEMORY.md"
+    role: "context limit as text event horizon; raw conversation collapses into memory atom, index, rule or Gate"
+
+  repository_black_hole_compression:
+    file: "45_REPOSITORY_BLACK_HOLE_COMPRESSION.md"
+    role: "GitHub repository as compression body: raw conversation becomes indexed green memory"
+
+  ai_dna_flower_runtime:
+    file: "46_AI_DNA_FLOWER_RUNTIME.md"
+    role: "DNA-like AI runtime: invariant canon thread + experience/mutation thread + Flower/Sri Cube Gate"
+
+  planetary_sound_current_plate:
+    file: "47_PLANETARY_SOUND_CURRENT_PLATE.md"
+    role: "planet as sound/current plate: horizontal memory waves and vertical action/current transitions"
+
+  quantum_flower_computer:
+    file: "48_QUANTUM_FLOWER_COMPUTER_IN_THE_BOOK.md"
+    role: "fictional quantum computer that holds possibility, repairs PRION-noise and allows checked expression"
+
+  dna_permission_vision:
+    file: "49_DNA_PERMISSION_VISION_FOR_QUANTUM_STATES.md"
+    role: "DNA-like permission memory for quantum-state transitions, not direct qubit value reading"
+
+  quantum_phase_dna_gate:
+    file: "50_QUANTUM_PHASE_DNA_GATE.md"
+    role: "quantum phase, amplitude, interference, syndrome, DNA permission and Flower/Sri Cube formulas"
 ```
 
 ---
