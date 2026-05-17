@@ -87,6 +87,7 @@ The world theory layer lets the novel become a full living world.
 48_QUANTUM_FLOWER_COMPUTER_IN_THE_BOOK.md
 49_DNA_PERMISSION_VISION_FOR_QUANTUM_STATES.md
 50_QUANTUM_PHASE_DNA_GATE.md
+- [54_CONSCIOUSNESS_FIELD_SYMBOL_NODE.md](54_CONSCIOUSNESS_FIELD_SYMBOL_NODE.md) — consciousness as a stable node between field, symbol, body, memory and Gate.
 
 ```text
 
