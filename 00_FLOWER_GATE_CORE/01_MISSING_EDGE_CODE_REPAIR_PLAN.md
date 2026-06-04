@@ -415,6 +415,7 @@ what memory remains
 If a new room appears, the system grows by adding a node and an edge.
 
 The Flower expands the grid without breaking the house.
+
 13. Protein Folding Lens
 
 A missing edge in code is similar to a missing contact in protein folding.
@@ -566,3 +567,210 @@ Missing contact
 
 Misfolded code
 = false-green feature
+
+14. Edge Proposal Form
+
+A new edge must not be added as raw code only.
+
+Every new edge must first be created as a proposal form.
+
+AI may create the proposal.
+
+Human operator must approve the Gate.
+
+TypeScript Schema
+
+type EdgeDefinition = {
+  id: string
+  from: string
+  to: string
+  trigger: string
+
+  gate: string
+  action: string
+  rollback: string
+  owner: string
+
+  memory: string
+  tests: string[]
+  risk: "LOW" | "MEDIUM" | "HIGH" | "CRITICAL"
+
+  status: "DRAFT" | "ASK" | "APPROVED" | "BLOCKED"
+}
+
+type FunctionAminoAcid = {
+  name: string
+
+  accepts: string[]
+  emits: string[]
+
+  requiresGate: string[]
+  rollback: string
+  memory: string
+
+  sideEffects: string[]
+  owner: string
+  tests: string[]
+}
+
+YAML Blank Form
+
+edge_proposal:
+  id: ""
+
+  from: ""
+  to: ""
+  trigger: ""
+
+  reason:
+    problem: ""
+    missing_room: ""
+    shadow_if_missing: ""
+
+  required_payload:
+    - ""
+
+  gate:
+    name: ""
+    required_checks:
+      - ""
+    owner: ""
+
+  action:
+    function: ""
+    function_accepts:
+      - ""
+    function_emits:
+      - ""
+
+  rollback:
+    function: ""
+    when_to_use:
+      - ""
+
+  memory:
+    log_to: ""
+    memory_atom_required: true
+
+  tests:
+    required:
+      - ""
+
+  risk:
+    level: ""
+    reason: ""
+
+  ai_allowed:
+    - draft_edge
+    - draft_tests
+    - prepare_transition_packet
+
+  ai_blocked:
+    - auto_merge
+    - bypass_owner
+    - deploy_without_gate
+
+  verdict:
+    status: DRAFT
+    required_operator: ""
+
+Example
+
+edge_proposal:
+  id: payment_success_to_accounting
+
+  from: payment
+  to: accounting
+  trigger: payment_success
+
+  reason:
+    problem: "Payment succeeds, but accounting may not receive the financial record."
+    missing_room: accounting
+    shadow_if_missing: "false-green payment: customer sees success, but financial memory is incomplete."
+
+  required_payload:
+    - paymentId
+    - orderId
+    - amount
+    - currency
+    - customerId
+
+  gate:
+    name: accounting_policy_check
+    required_checks:
+      - payment_confirmed
+      - amount_present
+      - currency_present
+      - customer_id_present
+    owner: accounting_operator
+
+  action:
+    function: createAccountingEntry
+    function_accepts:
+      - paymentId
+      - orderId
+      - amount
+      - currency
+      - customerId
+    function_emits:
+      - accounting_entry_created
+
+  rollback:
+    function: voidAccountingEntry
+    when_to_use:
+      - payment_refunded
+      - order_cancelled
+      - accounting_entry_invalid
+
+  memory:
+    log_to: accounting_transition_log
+    memory_atom_required: true
+
+  tests:
+    required:
+      - test_payment_success_routes_to_accounting
+      - test_accounting_entry_requires_payment_confirmed
+      - test_accounting_entry_can_rollback
+
+  risk:
+    level: HIGH
+    reason: "Missing accounting edge creates financial mismatch after successful payment."
+
+  ai_allowed:
+    - draft_edge
+    - draft_tests
+    - prepare_transition_packet
+
+  ai_blocked:
+    - auto_merge
+    - bypass_owner
+    - deploy_without_gate
+
+  verdict:
+    status: ASK
+    required_operator: accounting_operator
+
+Rule
+
+No edge proposal
+→ no new route
+
+No Gate owner
+→ no commit
+
+No rollback
+→ no safe transition
+
+No memory
+→ repeated shadow
+
+Canonical Line
+
+A function is an amino acid.
+
+An edge is a contact.
+
+A workflow is folding.
+
+The Edge Proposal Form is the Gate
+that decides whether this contact may become part of the living system.
