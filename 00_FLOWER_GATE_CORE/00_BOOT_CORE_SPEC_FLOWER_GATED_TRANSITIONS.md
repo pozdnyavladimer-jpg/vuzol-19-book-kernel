@@ -604,3 +604,167 @@ Possibility is not permission.
 ```text
 образ → термін → правило → приклад → тест → межа
 ```
+16. Current Core Map: files 01–13
+
+This boot file is the root of "00_FLOWER_GATE_CORE".
+
+The current folder has expanded from a theory of gated transitions into a practical transition architecture for code, AI, companies, documents, operators, service points, and AI-to-AI exchange.
+
+Current file map:
+
+00 = boot law of gated transitions
+
+01 = missing edge / misfolded code / false-green
+02 = codebase as cell / edge proposal form
+03 = color verdict / Human Gate operator
+04 = operator repos / document-as-edge / company field
+05 = minimal customer request → safe code grid test
+06 = V-Kernel → GitCube company field bridge
+07 = AI field consciousness as gated diffusion
+08 = role-classified edges / operator archetypes
+09 = transparent transition AI / not black box
+10 = Transition Energy / company economy / operator reward
+11 = Meta-Mitochondria / verified transition energy engine
+12 = Shynomontazh tire shop / service point / franchise protocol
+13 = AI-to-AI operator packet / virtual 3-6-9 board exchange
+
+The folder now follows this larger formula:
+
+state
+→ pressure
+→ shadow
+→ candidate transition
+→ 3V / 6V / 9V scan
+→ document edges
+→ role-classified operators
+→ Gate check
+→ Bindu verdict
+→ memory atom
+→ Transition Energy
+→ future compatibility
+
+New core concepts after files 10–13
+
+Document-as-Edge
+
+A document is not only a file.
+
+A document can be an edge between operators.
+
+It can open, close, block, repair, or record a transition.
+
+document = edge
+document packet = set of edges
+document edge scan = compatibility check
+
+No valid document edge means no safe transition.
+
+Transition Energy
+
+Transition Energy is the internal value signal of a Flower Gate company.
+
+It is not paid for noise, status, hero-shadow, or private control.
+
+It is assigned when a transition is verified:
+
+missing edge closed
+risk reduced
+Gate clarified
+rollback defined
+memory recorded
+false-green prevented
+process made repeatable
+
+Energy follows verified transition, not private control.
+
+Meta-Mitochondria
+
+Meta-Mitochondria is the energy organ of the system.
+
+It converts verified transitions into useful energy for the operator, company, franchise, or network.
+
+Signal
+→ Flower Scan
+→ Gate Check
+→ Bindu Verdict
+→ Memory Atom
+→ Transition Energy
+
+It does not feed the hero-shadow.
+
+It does not reward hidden Gate control.
+
+It rewards stabilized, visible, repeatable transitions.
+
+Operator Packet
+
+An Operator Packet is the public, scoped, AI-readable packet of a person, company, service point, or AI box.
+
+It may contain:
+
+roles
+offers
+needs
+documents
+Gates
+public memory
+blocked actions
+allowed edges
+compatibility request
+
+The Operator Packet is not the private soul of a human.
+
+It is a working public edge identity for safe cooperation.
+
+Virtual 3/6/9 Board
+
+A Virtual 3/6/9 Board is created when two operators, companies, AI boxes, or document packets attempt to connect.
+
+3V = visible signal / request / offer
+6V = edges / routes / documents / compatibility paths
+9V = Gates / permissions / risk / authority / blocked conditions
+
+AI-to-AI exchange does not decide for humans.
+
+AI-to-AI exchange creates a board of possible connection.
+
+Human Gate decides whether the connection becomes real.
+
+Canonical line:
+
+AI-to-AI exchange = scan.
+Human-to-Human decision = Gate.
+
+17. Updated boot instruction for future files
+
+Every next file in "00_FLOWER_GATE_CORE" must follow this rule:
+
+image / business pain
+→ term
+→ schema
+→ example
+→ Gate rule
+→ false-green risk
+→ memory atom
+→ practical test
+→ boundary
+
+The system must remain useful for:
+
+developers
+AI agents
+small companies
+service franchises
+document workflows
+operator reward systems
+AI boxes
+Android / local exchange systems
+
+But the core rule does not change:
+
+Possibility is not permission.
+No edge → no safe transition.
+No Gate → no commit.
+No memory → repeated shadow.
+No true-green without deeper field check.
+Energy follows verified transition.
