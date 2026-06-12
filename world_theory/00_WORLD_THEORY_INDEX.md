@@ -1052,3 +1052,19 @@ memory.
 
 The Flower teaches the system to see the transition before the shadow becomes fate.
 ```
+---
+
+## Continuation
+
+The World Theory index continues in:
+
+`00_WORLD_THEORY_INDEX_PART_2.md`
+
+Part 2 covers the new wave:
+
+`100–124 — Rune / Observer / AI Block / Body / Cell / Plant / Element Interface Layer`
+
+Reason:
+
+The index is split to avoid forcing the whole growing canon into one large file.
+``` [❶](code://python)
