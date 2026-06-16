@@ -790,3 +790,25 @@ Ukrainian:
 Друга частина індексу — це не розрив.
 Це Gate, який не дає полю стати хаосом.
 ```
+---
+
+Continuation — Part 3
+
+The World Theory index continues in:
+
+"00_WORLD_THEORY_INDEX_PART_3.md"
+
+Part 3 covers the new wave:
+
+"126–153 — Diffusion / Time / Quantum Gate / Chladni / Hum / Human Operator / Element Gate / Material Stack / Mathematical Bindu / Mechanism Compiler / Blood Module Search"
+
+Reason:
+
+Part 2 covers "100–124" as the interface layer.
+
+Part 3 continues with "126–153" as the mechanism compiler layer.
+
+Canonical line:
+
+A file without an index edge becomes hidden memory.
+A new index edge keeps the growing field navigable.
