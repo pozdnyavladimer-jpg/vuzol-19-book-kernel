@@ -470,6 +470,64 @@ The same neck can be ALLOW or BLOCK depending on the memory grid.
 
 ---
 
+## Torus Example: Cycle Memory and Pandora Surgery
+
+A torus T² is a simple model of a system with global cyclic memory.
+
+It has nontrivial first homology:
+
+H₁(T²) = Z²
+
+This means that the system contains essential cycles that cannot be contracted to a point.
+
+Let:
+
+α ∈ H₁(T²)
+
+be a critical memory cycle.
+
+A local repair that does not destroy α may be allowed.
+
+But if surgery cuts an essential cycle and caps the boundaries, the torus can collapse to a sphere-like topology:
+
+T² → S²
+
+Since:
+
+H₁(S²) = 0
+
+the induced memory map:
+
+h*: H₁(T²) → H₁(S²)
+
+kills the critical cycle:
+
+h*(α) = 0
+
+Therefore:
+
+ker(h*) ≠ 0
+
+This is Pandora failure.
+
+The singularity was removed locally, but the global memory cycle was destroyed.
+
+Pandora visibility index:
+
+P(SΣ) = dim ker(h*)
+
+If P(SΣ) > 0, hidden memory became visible only after being destroyed.
+
+Conclusion:
+
+A torus must not be cut across an essential memory cycle unless a repair complex preserves or replaces that cycle.
+
+Safe surgery does not merely remove damage.
+
+Safe surgery preserves the route by which the system remembers itself.
+
+---
+
 ## 12. GitHub Example as Topology
 
 Let a repository be:
