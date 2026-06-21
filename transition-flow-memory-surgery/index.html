@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory-Preserving Surgery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* slate-900 */
+            color: #f8fafc;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .math-font {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        @keyframes flow {
+            from { stroke-dashoffset: 24; }
+            to { stroke-dashoffset: 0; }
+        }
+
+        @keyframes pulse-glow {
+            0% { filter: drop-shadow(0 0 5px rgba(244, 63, 94, 0.5)); }
+            50% { filter: drop-shadow(0 0 15px rgba(244, 63, 94, 0.9)); }
+            100% { filter: drop-shadow(0 0 5px rgba(244, 63, 94, 0.5)); }
+        }
+
+        .flow-line {
+            animation: flow 1.5s linear infinite;
+        }
+        
+        .flow-line-fast {
+            animation: flow 0.8s linear infinite;
+        }
+
+        .singularity-glow {
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+
+        .export-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #1e293b;
+            border: 1px solid #334155;
+            color: #cbd5e1;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .export-btn:hover {
+            background: #334155;
+            color: #fff;
+        }
+        
+        #schema-container {
+            background: #0f172a;
+            padding: 24px;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="export-btn" onclick="exportToSVG()">Завантажити SVG</button>
+
+    <!-- Головний контейнер для експорту -->
+    <div id="schema-container" class="max-w-5xl w-full border border-slate-800 shadow-2xl relative">
+        
+        <!-- Заголовок -->
+        <div class="text-center mb-10">
+            <h1 class="text-3xl font-extrabold tracking-tight text-white mb-2">Memory-Preserving Surgery</h1>
+            <p class="text-slate-400 text-sm tracking-widest uppercase">Transition Flow Topology: T² vs S²</p>
+        </div>
+
+        <!-- Сітка з трьох панелей -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
+            
+            <!-- Лінії зв'язку між панелями -->
+            <svg class="absolute top-0 left-0 w-full h-full pointer-events-none hidden md:block" style="z-index: 0;">
+                <path d="M 50% 30% L 25% 55%" stroke="#334155" stroke-width="2" stroke-dasharray="4 4" fill="none" />
+                <path d="M 50% 30% L 75% 55%" stroke="#334155" stroke-width="2" stroke-dasharray="4 4" fill="none" />
+            </svg>
+
+            <!-- ПАНЕЛЬ 1: Початковий стан (Центрована зверху) -->
+            <div class="col-span-1 md:col-span-2 flex flex-col items-center relative z-10 mb-6">
+                <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700 w-80 text-center">
+                    <h2 class="text-sky-400 font-bold mb-1">1. Flow & Singularity</h2>
+                    <p class="math-font text-xs text-slate-300 mb-4">K_t (Pinched Torus)</p>
+                    
+                    <svg width="240" height="240" viewBox="0 0 300 280" class="mx-auto">
+                        <defs>
+                            <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+                                <feGaussianBlur stdDeviation="4" result="blur" />
+                                <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                            </filter>
+                        </defs>
+                        
+                        <!-- Форма тора із звуженням -->
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="
+                            M 60 130 A 90 90 0 1 1 240 130 C 240 220 165 240 155 240 L 145 240 C 135 240 60 220 60 130 Z
+                            M 110 130 A 40 40 0 1 1 190 130 C 190 180 160 195 155 195 L 145 195 C 140 195 110 180 110 130 Z
+                            " fill="rgba(56, 189, 248, 0.05)" stroke="#38bdf8" stroke-width="2"/>
+                            
+                        <!-- Сингулярність (Червона зона) -->
+                        <circle cx="150" cy="220" r="15" fill="rgba(244, 63, 94, 0.5)" class="singularity-glow" />
+                        
+                        <!-- Лінія пам'яті (H1 Cycle) -->
+                        <path d="M 85 130 A 65 65 0 1 1 215 130 C 215 190 155 218 150 218 C 145 218 85 190 85 130 Z" 
+                              fill="none" stroke="#0ea5e9" stroke-width="3" stroke-dasharray="12 6" class="flow-line" filter="url(#cyanGlow)" />
+
+                        <!-- Вказівники -->
+                        <text x="150" y="80" fill="#cbd5e1" font-size="12" text-anchor="middle" font-family="monospace">Memory M_t</text>
+                        <text x="150" y="265" fill="#f43f5e" font-size="12" text-anchor="middle" font-family="monospace">Σ_t (κ → ∞)</text>
+                    </svg>
+
+                    <div class="math-font text-xs text-sky-200 mt-2 bg-sky-900/30 py-2 rounded">
+                        H₁(T²) = ℤ² <br>
+                        <span class="text-slate-400">Memory cycle exists</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ПАНЕЛЬ 2: Pandora Failure (Зліва) -->
+            <div class="col-span-1 flex flex-col items-center relative z-10">
+                <div class="bg-rose-950/20 rounded-xl p-6 border border-rose-900/50 w-full max-w-sm text-center">
+                    <h2 class="text-rose-400 font-bold mb-1">2A. Pandora Failure</h2>
+                    <p class="math-font text-xs text-slate-300 mb-4">Surgery without Memory (S²)</p>
+                    
+                    <svg width="240" height="240" viewBox="0 0 300 280" class="mx-auto">
+                        <defs>
+                            <filter id="redGlow" x="-20%" y="-20%" width="140%" height="140%">
+                                <feGaussianBlur stdDeviation="4" result="blur" />
+                                <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                            </filter>
+                        </defs>
+                        
+                        <!-- Форма сфери (розірваний тор) -->
+                        <path d="
+                            M 60 130 A 90 90 0 1 1 240 130 L 240 180 
+                            A 25 25 0 0 1 190 180 L 190 130 
+                            A 40 40 0 1 0 110 130 L 110 180 
+                            A 25 25 0 0 1 60 180 Z" 
+                            fill="rgba(244, 63, 94, 0.05)" stroke="#f43f5e" stroke-width="2"/>
+                            
+                        <!-- Заглушки -->
+                        <path d="M 240 180 A 25 25 0 0 1 190 180" fill="rgba(244, 63, 94, 0.2)" stroke="#f43f5e" stroke-width="2"/>
+                        <path d="M 110 180 A 25 25 0 0 1 60 180" fill="rgba(244, 63, 94, 0.2)" stroke="#f43f5e" stroke-width="2"/>
+
+                        <!-- Зламана Лінія пам'яті -->
+                        <path d="M 85 180 L 85 130 A 65 65 0 1 1 215 130 L 215 180" 
+                              fill="none" stroke="#f43f5e" stroke-width="3" stroke-dasharray="12 6" filter="url(#redGlow)" />
+                        
+                        <!-- Іконка руйнування -->
+                        <path d="M 75 190 L 95 210 M 95 190 L 75 210" stroke="#f43f5e" stroke-width="3"/>
+                        <path d="M 205 190 L 225 210 M 225 190 L 205 210" stroke="#f43f5e" stroke-width="3"/>
+
+                        <text x="150" y="240" fill="#f43f5e" font-size="12" text-anchor="middle" font-family="monospace font-bold">CYCLE DESTROYED</text>
+                    </svg>
+
+                    <div class="math-font text-xs text-rose-200 mt-2 bg-rose-900/30 py-2 px-4 rounded border border-rose-800">
+                        ker(h_*) ≠ 0 <br>
+                        <span class="text-rose-400">H₁(S²) = 0 (Memory Collapsed)</span>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-3 font-semibold uppercase">Verdict: BLOCK</p>
+                </div>
+            </div>
+
+            <!-- ПАНЕЛЬ 3: Allowed Surgery (Справа) -->
+            <div class="col-span-1 flex flex-col items-center relative z-10">
+                <div class="bg-emerald-950/20 rounded-xl p-6 border border-emerald-900/50 w-full max-w-sm text-center">
+                    <h2 class="text-emerald-400 font-bold mb-1">2B. Allowed Surgery</h2>
+                    <p class="math-font text-xs text-slate-300 mb-4">Memory-Preserving (K_t⁺)</p>
+                    
+                    <svg width="240" height="240" viewBox="0 0 300 280" class="mx-auto">
+                        <defs>
+                            <filter id="greenGlow" x="-20%" y="-20%" width="140%" height="140%">
+                                <feGaussianBlur stdDeviation="4" result="blur" />
+                                <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                            </filter>
+                            <pattern id="diagonalHatch" width="8" height="8" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+                                <line x1="0" y1="0" x2="0" y2="8" stroke="#10b981" stroke-width="2" opacity="0.3"/>
+                            </pattern>
+                        </defs>
+                        
+                        <!-- Форма розірваного тора (база) -->
+                        <path d="
+                            M 60 130 A 90 90 0 1 1 240 130 L 240 180 L 190 180 L 190 130 
+                            A 40 40 0 1 0 110 130 L 110 180 L 60 180 Z" 
+                            fill="rgba(56, 189, 248, 0.05)" stroke="#38bdf8" stroke-width="2" stroke-dasharray="2 2"/>
+                            
+                        <!-- Ремонтний шунт (C - cap/bridge) -->
+                        <path d="M 60 180 C 60 250 240 250 240 180 L 190 180 C 190 220 110 220 110 180 Z" 
+                              fill="url(#diagonalHatch)" stroke="#10b981" stroke-width="2" />
+
+                        <!-- Збережена Лінія пам'яті -->
+                        <path d="M 85 130 A 65 65 0 1 1 215 130 L 215 180 C 215 235 85 235 85 180 Z" 
+                              fill="none" stroke="#10b981" stroke-width="3" stroke-dasharray="12 6" class="flow-line-fast" filter="url(#greenGlow)" />
+                        
+                        <text x="150" y="260" fill="#10b981" font-size="12" text-anchor="middle" font-family="monospace font-bold">REPAIR COMPLEX (C)</text>
+                    </svg>
+
+                    <div class="math-font text-xs text-emerald-200 mt-2 bg-emerald-900/30 py-2 px-4 rounded border border-emerald-800">
+                        ker(h_*) = 0 <br>
+                        <span class="text-emerald-400">H₁(T²) = ℤ² (Memory Preserved)</span>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-3 font-semibold uppercase">Verdict: ALLOW</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Легенда -->
+        <div class="mt-10 border-t border-slate-800 pt-6 flex justify-between items-center text-xs math-font text-slate-500">
+            <div>
+                <span class="text-sky-400">■</span> Flow Route
+                <span class="ml-4 text-rose-500">■</span> Singularity Defect
+                <span class="ml-4 text-emerald-500">■</span> Verified Repair
+            </div>
+            <div>
+                P(S_Σ) = dim ker(h_*) = Visibility Index
+            </div>
+        </div>
+    </div>
+
+    <!-- Скрипт для експорту в SVG -->
+    <script>
+        function exportToSVG() {
+            // Отримуємо весь HTML контейнера як ForeignObject, або експортуємо ідеальну структуру.
+            // Для LinkedIn найкраще генерувати чистий SVG-файл.
+            
+            const container = document.getElementById('schema-container');
+            const svgContent = `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700" style="background-color: #0f172a; font-family: monospace;">
+    <!-- Початковий Тор -->
+    <text x="500" y="50" fill="#fff" font-size="28" text-anchor="middle" font-family="sans-serif" font-weight="bold">Memory-Preserving Surgery: T² vs S²</text>
+    
+    <g transform="translate(350, 80)">
+        <text x="150" y="-10" fill="#38bdf8" font-size="16" text-anchor="middle">1. K_t (Approaching Singularity)</text>
+        <path fill="rgba(56, 189, 248, 0.05)" stroke="#38bdf8" stroke-width="2" fill-rule="evenodd" d="M 60 130 A 90 90 0 1 1 240 130 C 240 220 165 240 155 240 L 145 240 C 135 240 60 220 60 130 Z M 110 130 A 40 40 0 1 1 190 130 C 190 180 160 195 155 195 L 145 195 C 140 195 110 180 110 130 Z"/>
+        <circle cx="150" cy="220" r="15" fill="rgba(244, 63, 94, 0.6)" />
+        <path d="M 85 130 A 65 65 0 1 1 215 130 C 215 190 155 218 150 218 C 145 218 85 190 85 130 Z" fill="none" stroke="#0ea5e9" stroke-width="3" stroke-dasharray="12 6"/>
+        <text x="150" y="270" fill="#f43f5e" font-size="14" text-anchor="middle">Σ_t (Pinch / High Pressure)</text>
+    </g>
+
+    <line x1="500" y1="360" x2="250" y2="400" stroke="#334155" stroke-dasharray="5 5" stroke-width="2"/>
+    <line x1="500" y1="360" x2="750" y2="400" stroke="#334155" stroke-dasharray="5 5" stroke-width="2"/>
+
+    <!-- Pandora -->
+    <g transform="translate(100, 400)">
+        <text x="150" y="-10" fill="#f43f5e" font-size="16" text-anchor="middle">2A. Pandora Failure (BLOCK)</text>
+        <path d="M 60 130 A 90 90 0 1 1 240 130 L 240 180 A 25 25 0 0 1 190 180 L 190 130 A 40 40 0 1 0 110 130 L 110 180 A 25 25 0 0 1 60 180 Z" fill="rgba(244, 63, 94, 0.05)" stroke="#f43f5e" stroke-width="2"/>
+        <path d="M 240 180 A 25 25 0 0 1 190 180" fill="rgba(244, 63, 94, 0.2)" stroke="#f43f5e" stroke-width="2"/>
+        <path d="M 110 180 A 25 25 0 0 1 60 180" fill="rgba(244, 63, 94, 0.2)" stroke="#f43f5e" stroke-width="2"/>
+        <path d="M 85 180 L 85 130 A 65 65 0 1 1 215 130 L 215 180" fill="none" stroke="#f43f5e" stroke-width="3" stroke-dasharray="12 6"/>
+        <text x="150" y="240" fill="#f43f5e" font-size="14" text-anchor="middle">ker(h_*) ≠ 0 (Memory Collapsed)</text>
+    </g>
+
+    <!-- Allowed -->
+    <g transform="translate(600, 400)">
+        <text x="150" y="-10" fill="#10b981" font-size="16" text-anchor="middle">2B. Allowed Surgery (ALLOW)</text>
+        <path d="M 60 130 A 90 90 0 1 1 240 130 L 240 180 L 190 180 L 190 130 A 40 40 0 1 0 110 130 L 110 180 L 60 180 Z" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 4"/>
+        <path d="M 60 180 C 60 250 240 250 240 180 L 190 180 C 190 220 110 220 110 180 Z" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981" stroke-width="2"/>
+        <path d="M 85 130 A 65 65 0 1 1 215 130 L 215 180 C 215 235 85 235 85 180 Z" fill="none" stroke="#10b981" stroke-width="3" stroke-dasharray="12 6"/>
+        <text x="150" y="240" fill="#10b981" font-size="14" text-anchor="middle">ker(h_*) = 0 (Memory Preserved)</text>
+    </g>
+</svg>`;
+
+            const blob = new Blob([svgContent], {type: 'image/svg+xml'});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'memory_preserving_surgery.svg';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+                  </html>
