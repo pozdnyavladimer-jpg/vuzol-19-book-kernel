@@ -970,3 +970,28 @@ Ukrainian:
 Покажи ребра.
 Залиши Gate видимим.
 ```
+---
+
+## Continuation — Part 4
+
+The World Theory index continues in:
+
+`00_WORLD_THEORY_INDEX_PART_4.md`
+
+Part 4 covers:
+
+`170–188 — Hexorama / 4D Transition Language / Glyph Plate Canon / Material Gate Compiler / Literature Check Protocol`
+
+Short:
+
+`node → pressure → shadow → Gate → Bindu → memory`
+
+and for material joining:
+
+`material A + material B + shadow + diplomat + scan + inspection → MemoryAtom / ShadowAtom`
+
+Canonical line:
+
+A file without an index edge becomes hidden memory.
+A new index edge keeps the growing field navigable.
+---
