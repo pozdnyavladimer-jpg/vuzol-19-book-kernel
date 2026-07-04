@@ -1,0 +1,520 @@
+{
+  "axes": [
+    "red_mass",
+    "orange_flow",
+    "yellow_struct",
+    "green_balance",
+    "blue_law",
+    "violet_future"
+  ],
+  "nodes": {
+    "N01": {
+      "phrase": "shadow.form = compress(old_memory)",
+      "state": {
+        "red_mass": 0.28,
+        "orange_flow": 0.08,
+        "yellow_struct": 0.18,
+        "green_balance": 0.18,
+        "blue_law": 0.14,
+        "violet_future": 0.14
+      },
+      "tags": [
+        "shadow",
+        "pressure"
+      ],
+      "dominant": "RED / тиск"
+    },
+    "N02": {
+      "phrase": "light.path = open(new_route)",
+      "state": {
+        "red_mass": 0.07,
+        "orange_flow": 0.22,
+        "yellow_struct": 0.12,
+        "green_balance": 0.18,
+        "blue_law": 0.13,
+        "violet_future": 0.28
+      },
+      "tags": [
+        "light",
+        "route"
+      ],
+      "dominant": "VIOLET / майбутній перехід"
+    },
+    "N03": {
+      "phrase": "gate.hide(old_shadow)",
+      "state": {
+        "red_mass": 0.24,
+        "orange_flow": 0.06,
+        "yellow_struct": 0.25,
+        "green_balance": 0.18,
+        "blue_law": 0.18,
+        "violet_future": 0.09
+      },
+      "tags": [
+        "gate",
+        "lock"
+      ],
+      "dominant": "YELLOW / структура"
+    },
+    "N04": {
+      "phrase": "water.lead(new_light)",
+      "state": {
+        "red_mass": 0.06,
+        "orange_flow": 0.28,
+        "yellow_struct": 0.1,
+        "green_balance": 0.2,
+        "blue_law": 0.12,
+        "violet_future": 0.24
+      },
+      "tags": [
+        "water",
+        "carrier"
+      ],
+      "dominant": "ORANGE / рух"
+    },
+    "N05": {
+      "phrase": "stone.keep(silence)",
+      "state": {
+        "red_mass": 0.27,
+        "orange_flow": 0.05,
+        "yellow_struct": 0.25,
+        "green_balance": 0.17,
+        "blue_law": 0.13,
+        "violet_future": 0.13
+      },
+      "tags": [
+        "stone",
+        "memory"
+      ],
+      "dominant": "RED / тиск"
+    },
+    "N06": {
+      "phrase": "wind.send(answer)",
+      "state": {
+        "red_mass": 0.08,
+        "orange_flow": 0.3,
+        "yellow_struct": 0.08,
+        "green_balance": 0.17,
+        "blue_law": 0.12,
+        "violet_future": 0.25
+      },
+      "tags": [
+        "wind",
+        "signal"
+      ],
+      "dominant": "ORANGE / рух"
+    },
+    "N07": {
+      "phrase": "root.hide(fire)",
+      "state": {
+        "red_mass": 0.17,
+        "orange_flow": 0.06,
+        "yellow_struct": 0.28,
+        "green_balance": 0.2,
+        "blue_law": 0.13,
+        "violet_future": 0.16
+      },
+      "tags": [
+        "root",
+        "hidden_fire"
+      ],
+      "dominant": "YELLOW / структура"
+    },
+    "N08": {
+      "phrase": "leaf.read(sky)",
+      "state": {
+        "red_mass": 0.06,
+        "orange_flow": 0.14,
+        "yellow_struct": 0.18,
+        "green_balance": 0.19,
+        "blue_law": 0.18,
+        "violet_future": 0.25
+      },
+      "tags": [
+        "leaf",
+        "sky"
+      ],
+      "dominant": "VIOLET / майбутній перехід"
+    },
+    "N09": {
+      "phrase": "seed.remember(route)",
+      "state": {
+        "red_mass": 0.08,
+        "orange_flow": 0.12,
+        "yellow_struct": 0.17,
+        "green_balance": 0.2,
+        "blue_law": 0.15,
+        "violet_future": 0.28
+      },
+      "tags": [
+        "seed",
+        "route_memory"
+      ],
+      "dominant": "VIOLET / майбутній перехід"
+    },
+    "N10": {
+      "phrase": "dawn.open(next_gate)",
+      "state": {
+        "red_mass": 0.05,
+        "orange_flow": 0.18,
+        "yellow_struct": 0.14,
+        "green_balance": 0.18,
+        "blue_law": 0.17,
+        "violet_future": 0.28
+      },
+      "tags": [
+        "dawn",
+        "next_gate"
+      ],
+      "dominant": "VIOLET / майбутній перехід"
+    },
+    "N11": {
+      "phrase": "blue_moon.freeze(signal)",
+      "state": {
+        "red_mass": 0.2,
+        "orange_flow": 0.06,
+        "yellow_struct": 0.16,
+        "green_balance": 0.18,
+        "blue_law": 0.25,
+        "violet_future": 0.15
+      },
+      "tags": [
+        "blue",
+        "law",
+        "freeze"
+      ],
+      "dominant": "BLUE / закон"
+    },
+    "N12": {
+      "phrase": "orange_sun.release(current)",
+      "state": {
+        "red_mass": 0.08,
+        "orange_flow": 0.3,
+        "yellow_struct": 0.12,
+        "green_balance": 0.16,
+        "blue_law": 0.13,
+        "violet_future": 0.21
+      },
+      "tags": [
+        "orange",
+        "release"
+      ],
+      "dominant": "ORANGE / рух"
+    },
+    "N13": {
+      "phrase": "green_core.balance(pair)",
+      "state": {
+        "red_mass": 0.07,
+        "orange_flow": 0.13,
+        "yellow_struct": 0.15,
+        "green_balance": 0.34,
+        "blue_law": 0.15,
+        "violet_future": 0.16
+      },
+      "tags": [
+        "green",
+        "balance"
+      ],
+      "dominant": "GREEN / баланс"
+    },
+    "N14": {
+      "phrase": "violet_orbit.seed(future_path)",
+      "state": {
+        "red_mass": 0.05,
+        "orange_flow": 0.15,
+        "yellow_struct": 0.13,
+        "green_balance": 0.18,
+        "blue_law": 0.14,
+        "violet_future": 0.35
+      },
+      "tags": [
+        "violet",
+        "future"
+      ],
+      "dominant": "VIOLET / майбутній перехід"
+    },
+    "N15": {
+      "phrase": "yellow_bridge.hold(two_fields)",
+      "state": {
+        "red_mass": 0.09,
+        "orange_flow": 0.12,
+        "yellow_struct": 0.32,
+        "green_balance": 0.22,
+        "blue_law": 0.16,
+        "violet_future": 0.09
+      },
+      "tags": [
+        "yellow",
+        "bridge"
+      ],
+      "dominant": "YELLOW / структура"
+    },
+    "N16": {
+      "phrase": "red_boundary.warn(false_green)",
+      "state": {
+        "red_mass": 0.34,
+        "orange_flow": 0.06,
+        "yellow_struct": 0.15,
+        "green_balance": 0.12,
+        "blue_law": 0.22,
+        "violet_future": 0.11
+      },
+      "tags": [
+        "red",
+        "prion_audit"
+      ],
+      "dominant": "RED / тиск"
+    },
+    "N17": {
+      "phrase": "white_center.bind(verdict)",
+      "state": {
+        "red_mass": 0.08,
+        "orange_flow": 0.12,
+        "yellow_struct": 0.18,
+        "green_balance": 0.24,
+        "blue_law": 0.2,
+        "violet_future": 0.18
+      },
+      "tags": [
+        "bindu",
+        "verdict"
+      ],
+      "dominant": "GREEN / баланс"
+    },
+    "N18": {
+      "phrase": "black_void.store(unresolved_shadow)",
+      "state": {
+        "red_mass": 0.31,
+        "orange_flow": 0.04,
+        "yellow_struct": 0.13,
+        "green_balance": 0.16,
+        "blue_law": 0.14,
+        "violet_future": 0.22
+      },
+      "tags": [
+        "pandora",
+        "unresolved"
+      ],
+      "dominant": "RED / тиск"
+    }
+  },
+  "edges": [
+    {
+      "src": "N01",
+      "dst": "N02",
+      "relation": "shadow_to_light",
+      "weight": 0.705,
+      "delta": 0.295,
+      "verdict": "shadow_to_light: тиск не стирається, а маршрутизується у світло"
+    },
+    {
+      "src": "N02",
+      "dst": "N03",
+      "relation": "+3",
+      "weight": 0.6683,
+      "delta": 0.3317,
+      "verdict": "+3: VIOLET / майбутній перехід формує перехід у YELLOW / структура"
+    },
+    {
+      "src": "N03",
+      "dst": "N04",
+      "relation": "carrier",
+      "weight": 0.6397,
+      "delta": 0.3603,
+      "verdict": "carrier: стан отримує носій і може перейти далі"
+    },
+    {
+      "src": "N04",
+      "dst": "N05",
+      "relation": "+3",
+      "weight": 0.6359,
+      "delta": 0.3641,
+      "verdict": "+3: ORANGE / рух формує перехід у RED / тиск"
+    },
+    {
+      "src": "N05",
+      "dst": "N06",
+      "relation": "shadow_to_light",
+      "weight": 0.6232,
+      "delta": 0.3768,
+      "verdict": "shadow_to_light: тиск не стирається, а маршрутизується у світло"
+    },
+    {
+      "src": "N06",
+      "dst": "N07",
+      "relation": "+3",
+      "weight": 0.6612,
+      "delta": 0.3388,
+      "verdict": "+3: ORANGE / рух формує перехід у YELLOW / структура"
+    },
+    {
+      "src": "N07",
+      "dst": "N08",
+      "relation": "carrier",
+      "weight": 0.802,
+      "delta": 0.198,
+      "verdict": "carrier: стан отримує носій і може перейти далі"
+    },
+    {
+      "src": "N08",
+      "dst": "N09",
+      "relation": "-3",
+      "weight": 0.9471,
+      "delta": 0.0529,
+      "verdict": "-3: VIOLET / майбутній перехід повертає баланс до VIOLET / майбутній перехід"
+    },
+    {
+      "src": "N09",
+      "dst": "N10",
+      "relation": "carrier",
+      "weight": 0.9213,
+      "delta": 0.0787,
+      "verdict": "carrier: стан отримує носій і може перейти далі"
+    },
+    {
+      "src": "N10",
+      "dst": "N13",
+      "relation": "-3",
+      "weight": 0.7917,
+      "delta": 0.2083,
+      "verdict": "-3: GREEN / баланс повертає баланс до VIOLET / майбутній перехід"
+    },
+    {
+      "src": "N13",
+      "dst": "N17",
+      "relation": "bindu",
+      "weight": 0.8817,
+      "delta": 0.1183,
+      "verdict": "bindu: N13 → N17"
+    },
+    {
+      "src": "N17",
+      "dst": "N14",
+      "relation": "seed_future",
+      "weight": 0.799,
+      "delta": 0.201,
+      "verdict": "seed_future: N17 → N14"
+    },
+    {
+      "src": "N01",
+      "dst": "N03",
+      "relation": "shadow_repeat",
+      "weight": 0.8951,
+      "delta": 0.1049,
+      "verdict": "shadow_repeat: N01 → N03"
+    },
+    {
+      "src": "N02",
+      "dst": "N04",
+      "relation": "light_carrier",
+      "weight": 0.9213,
+      "delta": 0.0787,
+      "verdict": "light_carrier: N02 → N04"
+    },
+    {
+      "src": "N05",
+      "dst": "N18",
+      "relation": "unresolved_shadow",
+      "weight": 0.8438,
+      "delta": 0.1562,
+      "verdict": "unresolved_shadow: N05 → N18"
+    },
+    {
+      "src": "N16",
+      "dst": "N17",
+      "relation": "audit_to_verdict",
+      "weight": 0.697,
+      "delta": 0.303,
+      "verdict": "audit_to_verdict: N16 → N17"
+    },
+    {
+      "src": "N11",
+      "dst": "N13",
+      "relation": "law_to_balance",
+      "weight": 0.76,
+      "delta": 0.24,
+      "verdict": "law_to_balance: N11 → N13"
+    },
+    {
+      "src": "N12",
+      "dst": "N14",
+      "relation": "flow_to_future",
+      "weight": 0.7912,
+      "delta": 0.2088,
+      "verdict": "flow_to_future: N12 → N14"
+    },
+    {
+      "src": "N15",
+      "dst": "N13",
+      "relation": "structure_to_balance",
+      "weight": 0.7791,
+      "delta": 0.2209,
+      "verdict": "structure_to_balance: N15 → N13"
+    },
+    {
+      "src": "N18",
+      "dst": "N14",
+      "relation": "pandora_to_future",
+      "weight": 0.6886,
+      "delta": 0.3114,
+      "verdict": "pandora_to_future: N18 → N14"
+    },
+    {
+      "src": "N06",
+      "dst": "N11",
+      "relation": "signal_to_law",
+      "weight": 0.6753,
+      "delta": 0.3247,
+      "verdict": "signal_to_law: N06 → N11"
+    },
+    {
+      "src": "N04",
+      "dst": "N12",
+      "relation": "water_to_sun_current",
+      "weight": 0.9384,
+      "delta": 0.0616,
+      "verdict": "water_to_sun_current: N04 → N12"
+    },
+    {
+      "src": "N08",
+      "dst": "N15",
+      "relation": "sky_to_bridge",
+      "weight": 0.7814,
+      "delta": 0.2186,
+      "verdict": "sky_to_bridge: N08 → N15"
+    }
+  ],
+  "traversal": [
+    "N01",
+    "N02",
+    "N03",
+    "N04",
+    "N05",
+    "N06",
+    "N07",
+    "N08",
+    "N09",
+    "N10",
+    "N13",
+    "N17",
+    "N16",
+    "N17",
+    "N18",
+    "N14",
+    "N15",
+    "N13",
+    "N11",
+    "N12",
+    "N14",
+    "N17"
+  ],
+  "final_global_memory": {
+    "red_mass": 0.0956,
+    "orange_flow": 0.1454,
+    "yellow_struct": 0.1602,
+    "green_balance": 0.2098,
+    "blue_law": 0.1721,
+    "violet_future": 0.2169
+  },
+  "final_dominant_memory": "VIOLET / майбутній перехід"
+}

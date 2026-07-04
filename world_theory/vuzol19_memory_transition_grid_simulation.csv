@@ -1,0 +1,23 @@
+visited,phrase,dominant_input,dominant_memory_after,state_shift,memory_entropy,red_mass,orange_flow,yellow_struct,green_balance,blue_law,violet_future
+N01,shadow.form = compress(old_memory),RED / тиск,RED / тиск,0.0417,0.9216,0.1984,0.1424,0.1704,0.1704,0.1592,0.1592
+N02,light.path = open(new_route),VIOLET / майбутній перехід,VIOLET / майбутній перехід,0.0564,0.9344,0.1624,0.1641,0.1563,0.1731,0.151,0.193
+N03,gate.hide(old_shadow),YELLOW / структура,RED / тиск,0.0539,0.9167,0.1841,0.135,0.1825,0.175,0.1591,0.1642
+N04,water.lead(new_light),ORANGE / рух,VIOLET / майбутній перехід,0.0633,0.914,0.1494,0.1756,0.1594,0.182,0.1482,0.1854
+N05,stone.keep(silence),RED / тиск,YELLOW / структура,0.0575,0.9003,0.1832,0.1404,0.1848,0.1786,0.1431,0.1699
+N06,wind.send(answer),ORANGE / рух,VIOLET / майбутній перехід,0.0651,0.8928,0.1543,0.1851,0.1555,0.1762,0.1366,0.1923
+N07,root.hide(fire),YELLOW / структура,YELLOW / структура,0.0509,0.887,0.1587,0.1501,0.1904,0.1829,0.1348,0.1833
+N08,leaf.read(sky),VIOLET / майбутній перехід,VIOLET / майбутній перехід,0.0359,0.8514,0.131,0.1473,0.1875,0.1849,0.1474,0.2019
+N09,seed.remember(route),VIOLET / майбутній перехід,VIOLET / майбутній перехід,0.028,0.809,0.1167,0.1397,0.1826,0.1891,0.1481,0.2238
+N10,dawn.open(next_gate),VIOLET / майбутній перехід,VIOLET / майбутній перехід,0.0301,0.8064,0.098,0.151,0.1707,0.1866,0.1542,0.2395
+N13,green_core.balance(pair),GREEN / баланс,GREEN / баланс,0.0498,0.7731,0.0902,0.1451,0.1649,0.2296,0.153,0.2172
+N17,white_center.bind(verdict),GREEN / баланс,GREEN / баланс,0.0191,0.7832,0.0873,0.1381,0.1691,0.2325,0.1662,0.2068
+N16,red_boundary.warn(false_green),RED / тиск,GREEN / баланс,0.0865,0.8761,0.1581,0.1162,0.1638,0.201,0.1813,0.1797
+N17,white_center.bind(verdict),GREEN / баланс,GREEN / баланс,0.0254,0.8403,0.1362,0.1173,0.1683,0.2119,0.1865,0.1798
+N18,black_void.store(unresolved_shadow),RED / тиск,GREEN / баланс,0.0588,0.8397,0.1849,0.0957,0.1576,0.1974,0.1735,0.1911
+N14,violet_orbit.seed(future_path),VIOLET / майбутній перехід,VIOLET / майбутній перехід,0.0617,0.8106,0.1471,0.1109,0.1499,0.1925,0.1641,0.2356
+N15,yellow_bridge.hold(two_fields),YELLOW / структура,GREEN / баланс,0.0652,0.8149,0.1311,0.1134,0.1975,0.2002,0.1629,0.1948
+N13,green_core.balance(pair),GREEN / баланс,GREEN / баланс,0.0462,0.7827,0.114,0.1181,0.1842,0.2394,0.1593,0.1851
+N11,blue_moon.freeze(signal),BLUE / закон,GREEN / баланс,0.0437,0.813,0.1381,0.1018,0.1774,0.2228,0.1847,0.1753
+N12,orange_sun.release(current),ORANGE / рух,GREEN / баланс,0.0651,0.8808,0.1218,0.1573,0.1613,0.2052,0.1694,0.185
+N14,violet_orbit.seed(future_path),VIOLET / майбутній перехід,VIOLET / майбутній перехід,0.0523,0.8081,0.1017,0.1553,0.1525,0.1981,0.1612,0.2312
+N17,white_center.bind(verdict),GREEN / баланс,VIOLET / майбутній перехід,0.0256,0.8024,0.0956,0.1454,0.1602,0.2098,0.1721,0.2169
