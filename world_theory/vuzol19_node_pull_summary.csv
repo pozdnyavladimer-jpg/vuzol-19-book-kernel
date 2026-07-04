@@ -1,0 +1,5 @@
+scenario,pulled_node,meaning,global_dominant_after,global_delta,red_mass,orange_flow,yellow_struct,green_balance,blue_law,violet_future
+A — Pull RED/BLUE audit node,N16,Потягнути вузол false-green audit: більше тиску + закону.,VIOLET / майбутній перехід,0.0061,0.1477,0.137,0.1691,0.1899,0.1599,0.1963
+B — Pull GREEN balance core,N13,Потягнути центр балансу: більше стабілізації пар.,GREEN / баланс,0.0162,0.1411,0.1346,0.1674,0.2061,0.1572,0.1937
+C — Pull VIOLET future orbit,N14,Потягнути майбутній маршрут: більше переходу вперед.,VIOLET / майбутній перехід,0.014,0.1402,0.1381,0.1683,0.1882,0.1545,0.2107
+D — Pull BLACK/PANDORA unresolved shadow,N18,Потягнути невирішену тінь: тиск + майбутній ризик.,VIOLET / майбутній перехід,0.0091,0.1501,0.1353,0.1695,0.1881,0.1555,0.2016
