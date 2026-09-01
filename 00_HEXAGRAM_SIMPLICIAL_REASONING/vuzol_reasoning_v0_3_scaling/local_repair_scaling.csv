@@ -1,0 +1,5 @@
+leaves,depth,internal_nodes,local_recompute_nodes,saved_internal_recomputations,recompute_fraction,speedup_by_node_count
+27,3,13,3,10,0.23076923076923078,4.333333333333333
+81,4,40,4,36,0.1,10.0
+243,5,121,5,116,0.04132231404958678,24.2
+729,6,364,6,358,0.016483516483516484,60.666666666666664
