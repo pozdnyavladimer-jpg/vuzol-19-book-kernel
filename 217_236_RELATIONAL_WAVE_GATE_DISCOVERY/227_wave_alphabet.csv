@@ -1,0 +1,10 @@
+Rune,Wave/operator,Signed flow,Gate axis,Operational meaning,Epistemic mapping
+Φ0,QUIET / HOLD,0,0,No committed transition; preserve state,HOLD
+Φ1,FLOW / +,1,0,Constructive propagation of compatible evidence,+3
+Φ2,SHADOW / −,-1,0,Counter-pressure; contradiction/falsifier candidate,-3
+Φ3,GATE,0,1,Threshold/selective admission of a transition,Gate
+Φ4,BLOCK,0,-1,Veto transition; prevent propagation,BLOCK
+Φ5,COMMIT,1,1,Accepted transition becomes persistent state,Bindu/KEEP
+Φ6,UNWIND,-1,-1,Invalidate dependent committed states,STALE
+Φ7,REWRITE,1,-1,Replace a failed state while preserving valid dependencies,REWRITE
+Φ8,QUERY / RESONANCE,0,2,Probe uncertain edge/state before commit,SHADOW edge

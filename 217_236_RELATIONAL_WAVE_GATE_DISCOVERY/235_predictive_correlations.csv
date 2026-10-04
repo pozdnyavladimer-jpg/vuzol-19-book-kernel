@@ -1,0 +1,13 @@
+predictor_t,target_t_plus_1,spearman_r,p_value
+defect_map_change,future_component_change,0.579625401763271,1.6230025059889873e-33
+defect_map_change,future_signedge_change,0.11878781455635076,0.024596963026704406
+defect_count,future_component_change,0.5961439770990214,8.008317383953636e-36
+defect_count,future_signedge_change,0.05034778105177314,0.34216524150794186
+current_component_change,future_component_change,0.4514784842716781,2.215219232744954e-19
+current_component_change,future_signedge_change,0.07313707221840002,0.16733165453684345
+current_signedge_change,future_component_change,0.1333759158034001,0.011534953425503707
+current_signedge_change,future_signedge_change,0.43478342833417216,6.09256017442847e-18
+mean_amp,future_component_change,-0.3489726562639282,1.0864087361372582e-11
+mean_amp,future_signedge_change,-0.06433027149442105,0.224676297487872
+low_amp_threshold,future_component_change,-0.2832166202866766,4.98071261397076e-08
+low_amp_threshold,future_signedge_change,-0.09088200806258288,0.0859591512710371

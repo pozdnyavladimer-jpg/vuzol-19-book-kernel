@@ -1,0 +1,4 @@
+case,mean_abs_holonomy,p95_abs_holonomy
+pure_gauge_connection,1.920801080666361e-16,8.881784197001252e-16
+curved_connection_before,0.12000000000000002,0.120000000000001
+curved_connection_after_gauge,0.12000000000000005,0.120000000000001

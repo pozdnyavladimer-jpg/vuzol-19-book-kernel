@@ -1,0 +1,2 @@
+best_alpha_gap_from_even_steps,train_AUC,heldout_odd_AUC,heldout_current_form_only_AUC,heldout_gap_only_AUC
+0.0,0.6909243697478992,0.7400449582530507,0.7400449582530507,0.40663134232498394

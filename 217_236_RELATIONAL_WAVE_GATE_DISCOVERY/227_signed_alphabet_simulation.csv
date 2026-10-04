@@ -1,0 +1,4 @@
+Architecture,Mean accuracy,SD
+Positive-only,0.7898,0.19995552005383577
+Signed Flow/Shadow,0.7898,0.19995552005383577
+Signed + Gate/Unwind,0.9259124999999986,0.07414688863162078

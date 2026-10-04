@@ -1,0 +1,12 @@
+Composition,Wave interpretation,State-engine interpretation
+FLOW + FLOW,amplify / propagate,+3 chain continues if compatible
+FLOW + SHADOW,interference / test,candidate enters falsification
+SHADOW + SHADOW,strong veto OR critic-conflict,requires falsifier validation
+FLOW + GATE,selective transfer,candidate may pass
+SHADOW + GATE,selective rejection,candidate may HOLD/BLOCK
+GATE + COMMIT,state crystallization,Bindu
+COMMIT + FLOW,new prior state,next reasoning step
+COMMIT + SHADOW,regression test,old Bindu challenged
+BLOCK + UNWIND,dependency invalidation,descendants → STALE
+UNWIND + REWRITE,selective repair,new version
+QUERY + GATE,resolve uncertainty,promote/reject SHADOW edge
