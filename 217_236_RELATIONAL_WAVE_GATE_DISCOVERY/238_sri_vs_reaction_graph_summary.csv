@@ -1,0 +1,5 @@
+Test,Method,N,Accuracy,Rollback precision,Rollback recall
+Hidden-reaction recovery,Reaction graph + atom-map templates,12,1.0,,
+Hidden-reaction recovery,Sri transition ledger,12,1.0,,
+False-reaction rollback,Graph 2-hop rollback,10,,0.34782608695652173,0.8
+False-reaction rollback,Sri dependency unwind,10,,1.0,1.0

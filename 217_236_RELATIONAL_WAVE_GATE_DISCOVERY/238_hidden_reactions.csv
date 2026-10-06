@@ -1,0 +1,13 @@
+rid,reactants,products,family,conserved,baseline_recovered,sri_recovered
+R0005,M032+M075,M003,couple_1_0_to_1,True,True,True
+R0042,M016+M023,M021,couple_1_3_to_0,True,True,True
+R0073,M008,M016+M028,fragment_couple_0_1_to_1,True,True,True
+R0028,M072+M075,M080,couple_2_0_to_2,True,True,True
+R0064,M003,M032+M075,fragment_couple_1_0_to_1,True,True,True
+R0023,M046+M079,M007,couple_2_1_to_3,True,True,True
+R0038,M053+M081,M004,couple_0_2_to_2,True,True,True
+R0037,M057+M081,M006,couple_2_3_to_1,True,True,True
+R0061,M051,M076+M079,fragment_couple_1_1_to_2,True,True,True
+R0070,M018,M016+M069,fragment_couple_2_1_to_3,True,True,True
+R0027,M032+M042,M021,couple_3_1_to_0,True,True,True
+R0000,M076+M079,M051,couple_1_1_to_2,True,True,True
